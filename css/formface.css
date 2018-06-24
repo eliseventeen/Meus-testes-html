@@ -1,0 +1,174 @@
+@charset "utf8";
+@media screen{
+   body{
+       background-color: #333;
+   }
+   p strong{
+       font-weight: bold;
+   }
+   p em{
+       font-style: italic;
+   }
+   main{
+    font-family: 'Slabo 27px', serif;
+   }
+   a{
+       color: #999;
+       text-decoration: none;
+       margin: 0;
+       padding:0;
+   }
+   .cabeca{
+    position: fixed;
+    background-color: #111;
+    box-sizing: border-box;
+    padding: 5px;
+    transition: max-width 1s;
+    text-align: center;
+    height: 965px;
+
+    z-index: 999;
+   }
+   .head{
+    max-width: 65px;       
+   }
+   .header{
+    max-width: 200px;
+   }
+   .cabeca > .container{
+       position: relative;
+       display: block;
+       width: 100%;
+       clear: both;
+   }
+   .cabeca > .container:nth-child(2){
+        margin-bottom: 10px;
+   }
+   .botao-flutuante{
+       position: absolute;
+       right: -25px;
+       top: -6px;
+       z-index: 25;
+       cursor: pointer;
+   }
+   .cabeca > .container h1{
+       position: relative;
+       max-width: 100%;
+       
+   }
+   
+   .head .container h1 > img{
+       width: 55px;
+   }
+   .header .container h1 > img{
+        width: 150px;
+        border-radius: 50%;
+    }
+   .cabeca .container h1 > img{
+        transition: 1s;
+    }
+    .menu_principal li{
+        transition: 200ms;
+    }
+    .menu_principal li:hover{
+        
+        transform: scale(1.1);
+    }
+    .menu_principal li a{
+        color: #fff
+    }
+
+    /*Fim do header*/
+
+    /*começo do centro*/
+    .centro{
+        position: relative;
+        max-width: 1280px;
+        display: block;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .centro section{
+        position: relative;
+        display: block;
+        padding: 5px;
+    }
+    .centro section > h1{
+        position: relative;
+        display: block;
+
+        color: rgb(255, 123, 0);
+
+        font-size: 36px;
+        left: 20px;
+
+
+    }
+    .centro section article{
+        text-align: center;
+        max-width: 950px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #999;
+        margin: 0 auto;
+    }
+    .centro section article div{
+        position: relative;
+        display: inline-block;
+        max-width: 650px;
+        vertical-align: top;
+        text-align: justify;
+        font-size: 18px;
+        
+    }
+    .centro section article > h1{
+        text-align: left;
+        padding: 20px 0;
+    }
+    .centro section img{
+        float: left;
+    }
+    .centro section article > div p{
+
+        text-indent: 1.3em;
+        position: relative;
+        float: left;
+        padding: 5px;
+        margin: 0 0 20px 0;
+
+    }
+    .centro article{
+        padding: 20px 0;
+    }
+    .centro article > figure{
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        transform: rotate(-15deg);
+        transition: transform 1s;
+        box-shadow: 2px 2px 4px #333;
+        margin: 0 10px;
+    }
+    .centro article > figure:hover{
+        transform: rotate(0);
+        z-index: 2;
+    }
+    .centro article > figure figcaption{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .centro article > figure figcaption:hover{
+        opacity: 1;
+    }
+    .centro article > figure figcaption h1{
+        padding: 10px;
+    }
+    
+}

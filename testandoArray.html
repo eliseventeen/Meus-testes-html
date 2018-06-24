@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+</head>
+	<script>
+		window.onload = function(){
+			
+			seleciona()
+		}
+		function seleciona(){
+			let lista = document.getElementsByTagName('li');
+			for(let i=0; i<lista.length; i++){
+				lista[i].addEventListener('click', function(e){
+					console.log(e)
+				})
+			}
+		}
+	</script>
+<body>
+	<h1>Teste</h1>
+	<ul>
+		<li>link 1</li>
+		<li>link 2</li>
+		<li>link 3</li>
+		<li>link 4</li>
+		<li>link 5</li>
+	</ul>
+
+</body>
+</html>

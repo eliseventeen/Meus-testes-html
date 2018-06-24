@@ -1,0 +1,12 @@
+@media screen{
+    main{
+        position: relative;
+        display: block;
+
+        background-color: blanchedalmond;
+
+    }
+    .vetor{
+        max-width: 50px;
+    }
+}

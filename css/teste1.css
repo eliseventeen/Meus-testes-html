@@ -1,0 +1,134 @@
+@media screen{
+	main{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		background-color: #ddd;
+		max-width: 960px;
+		text-align: center;
+		font-family: "century gothic", sans-serif;
+		color: #333;
+	}
+	.header{
+		position: relative;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+
+		margin-bottom: 10px;
+
+		text-align: left;
+		background-color: #fff;
+		box-shadow: 2px 2px 3px rgba(0,0,0,.4)
+	}
+	.header > div{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.titulo{
+		position: relative;
+		display: inline-flex;
+	}
+	.titulo img{
+		position: relative;
+		font-size: 36px;
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: orange;
+		padding: 10px 20px;
+	}
+	.menu-principal{
+		position: relative;
+		display: inline-block;
+		text-align: center;
+	}
+	.menu-principal ul{
+		position: relative;
+		display: inline-block;
+		list-style-type: none;
+		width: 100%;
+		box-sizing: border-box;	
+	}
+	.menu-principal li{
+		position: relative;
+		display: inline-flex;
+		margin: 0 3px;
+	}
+	
+	.menu-principal li a{
+		position: relative;
+		display: inline-flex;
+
+		text-decoration: none;
+		text-transform: uppercase;
+
+		font-weight: bolder;
+		font-size: 26px;
+		color: #333;
+		padding: 15px 10px;
+		box-sizing: border-box;
+	}
+	.menu-principal li a:active{
+		color: #f33;
+	}
+
+
+	.resumo{
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		background-color: purple;
+	}
+	.resumo section{
+		position: relative;
+		display: inline-flex;
+		padding: 0;
+		margin: 0 5px;
+		background-color: #ddd;
+		width: 200px;
+		box-shadow: 3px 3px 5px rgba(0,0,0,.4);
+	}
+	.resumo h1{
+		position: relative;
+		display: block;
+		padding: 20px 0;
+		color: #fff;
+		font-size: 26px;
+	}
+	.resumo section h1{
+		position: absolute;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 20px 0;
+
+		text-align: center;
+
+		color: #fff;
+		background-color: rgba(0,0,0,0.6);
+		z-index: 2;
+	}
+	.resumo section figure{
+		position: relative;
+		display: block;
+
+		width: 100%;
+
+		background-color: #fff;
+	}
+	.resumo section figure figcaption{
+		position: relative;
+		display: inline-flex;
+		clear: both;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.resumo p::before{
+		color: orange;
+		font-size: 25px;
+		content: "*";
+	}
+	
+}

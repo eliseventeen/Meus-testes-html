@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Testando formulario</title>
+	<script>
+		window.onload = function(){
+			
+			let nome = document.querySelector("#nome").value;
+			let sobrenome = document.querySelector("#sobrenome");
+			let result = document.querySelector("#result");
+			let clique = document.querySelector("#clique");
+
+				function avaliaNome(value){
+					if(value == ""){
+						result.innerHTML = "Errado";
+					}else{
+						result.innerHTML = "Certo";
+					}
+					return result;
+				}
+			clique.onclick = function(){
+				avaliaNome(nome);
+			}
+		}
+			
+	</script>
+</head>
+<body>
+	<form action="#" method="post">
+		<label for="nome">Nome:</label><br />
+		<input type="text" name="nome" id="nome" /><br />
+		
+		<label for="sobrenome">Sobrenome:</label><br />
+		<input type="text" name="sobrenome" id="sobrenome" /><br />
+		<a href="#" id="clique">Ver</a>
+		<p id="result"></p>
+	</form>
+</body>
+</html>
